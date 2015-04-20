@@ -8,6 +8,8 @@
 # index in one of the arrays (based on situation); if equivalent, check if all of the used
 # numbers are unique; if not, move index in one of the arrays, else, found 5 numbers that sum to zero
 #
+# I MIGHT ADVISE TO LOOK AT THIS ONE
+#
 
 sumArray = []
 myArray = [-10, 0, -8, 11, 9, 14, -2, 3, 5, -17, -4, 1, -1]
