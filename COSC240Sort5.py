@@ -8,7 +8,7 @@
 # index in one of the arrays (based on situation); if equivalent, check if all of the used
 # numbers are unique; if not, move index in one of the arrays, else, found 5 numbers that sum to zero
 #
-# I MIGHT ADVISE TO LOOK AT THIS ONE
+# I MIGHT ADVISE TO LOOK AT THIS ONE!
 #
 
 sumArray = []
