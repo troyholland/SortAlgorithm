@@ -10,7 +10,7 @@
 #
 
 sumArray = []
-myArray = [-10, 0, -8, 11, 9, 14, -2, 3, 5, -17, -4, 1, -1]
+myArray = [6, -15, 7, 8, -17, 14, -6, 27]
 
 #creates 'array of arrays' that holds sums of all permutations of 2 numbers from original array
 def getAllSums(sizeArray):
@@ -21,7 +21,7 @@ def getAllSums(sizeArray):
 			
 	#sort when done - sorts by first element in 3-element array inside each element of the created array
 	sumArray.sort()
-	
+
 #sees if 5 numbers are unique and do not overlap
 def ifUnique(sumOne, sumTwo, value):
 	if(sumOne[1] != sumTwo[1] and sumOne[1] != sumTwo[2] and sumOne[2] != sumTwo[1] and sumOne[2] != sumTwo[2]
@@ -42,10 +42,12 @@ def findIfEqualZero(sizeArray, sizeSumArray):
 		print "Not possible"
 	else:
 		for x in range(0, sizeArray): #go through each number in original sorted array - n run time
-			if(findIfEqualOpp(x, sizeSumArray)): #go through sum arrays and find 2 sums whose sum is the opposite value in original array
-				return True
-			else:
-				return False
+			found = findIfEqualOpp(x, sizeSumArray) #go through sum arrays and find 2 sums whose sum is the opposite value in original array
+
+			if(found == True):
+				break
+				
+		return found
 			
 	#############################################
 	# n * n^2 = n^3 total run time of algorithm #
